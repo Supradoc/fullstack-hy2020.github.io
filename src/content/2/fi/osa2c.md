@@ -362,6 +362,9 @@ Eli effect-hookit ovat juuri oikea tapa hakea dataa palvelimelta.
 Poistetaan nyt datan hakeminen tiedostosta <i>main.jsx</i>. Komponentille <i>App</i> ei ole enää tarvetta välittää dataa propseina. Eli <i>main.jsx</i> pelkistyy seuraavaan muotoon:
 
 ```js
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
 ```
 
